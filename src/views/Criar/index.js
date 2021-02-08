@@ -79,7 +79,7 @@ function Home({ match }) {
             Especialidade
             
         }).then(() =>
-        alert('MÉDICO CADASTRADO COM SUCESSO'))
+        alert('MÉDICO CADASTRADO COM SUCESSO'));
     } else{
         await api.put((`/${match.params.id}`),{
             nome,
